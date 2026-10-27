@@ -1,159 +1,99 @@
 const restaurantData = {
-
     restaurantName: "Yaya's Hot Chicken",
-
     tagline: "Taste the Blessings",
-
     address: "995 E Memorial Blvd, Unit 12, Lakeland, FL 33801",
-
-    // PUT YOUR RESTAURANT PHONE NUMBER HERE
     phone: "",
 
     hours: [
-        {
-            day: "Monday",
-            time: "Add hours"
-        },
-        {
-            day: "Tuesday",
-            time: "Add hours"
-        },
-        {
-            day: "Wednesday",
-            time: "Add hours"
-        },
-        {
-            day: "Thursday",
-            time: "Add hours"
-        },
-        {
-            day: "Friday",
-            time: "Add hours"
-        },
-        {
-            day: "Saturday",
-            time: "Add hours"
-        },
-        {
-            day: "Sunday",
-            time: "Add hours"
-        }
+        { day: "Monday", time: "Hours coming soon" },
+        { day: "Tuesday", time: "Hours coming soon" },
+        { day: "Wednesday", time: "Hours coming soon" },
+        { day: "Thursday", time: "Hours coming soon" },
+        { day: "Friday", time: "Hours coming soon" },
+        { day: "Saturday", time: "Hours coming soon" },
+        { day: "Sunday", time: "Hours coming soon" }
     ],
-
 
     menu: [
-
         {
             category: "Specials",
-
             items: [
-
                 {
                     name: "Loaded Fries",
-                    description: "",
-                    price: ""
+                    description: "Crispy fries loaded with seasoned chicken and Yaya's signature flavors.",
+                    price: "Price coming soon"
                 },
-
                 {
                     name: "Chicken Bites",
-                    description: "",
-                    price: ""
+                    description: "Juicy bite-size chicken pieces, seasoned and cooked fresh.",
+                    price: "Price coming soon"
                 },
-
                 {
                     name: "1 Chicken Slider with Fries",
-                    description: "",
-                    price: ""
+                    description: "One hot chicken slider served with a side of crispy fries.",
+                    price: "Price coming soon"
                 },
-
                 {
                     name: "2 Chicken Sliders with Fries",
-                    description: "",
-                    price: ""
+                    description: "Two hot chicken sliders served with a side of crispy fries.",
+                    price: "Price coming soon"
                 }
-
             ]
         },
-
-
         {
             category: "Rice Platters",
-
             items: [
-
                 {
                     name: "Chicken Over Rice & Salad",
-                    description: "",
-                    price: ""
+                    description: "Seasoned chicken served over rice with a fresh side salad.",
+                    price: "Price coming soon"
                 },
-
                 {
                     name: "Lamb Over Rice & Salad",
-                    description: "",
-                    price: ""
+                    description: "Savory lamb served over rice with a fresh side salad.",
+                    price: "Price coming soon"
                 },
-
                 {
                     name: "Chicken & Lamb Over Rice",
-                    description: "",
-                    price: ""
+                    description: "A hearty combination of seasoned chicken and lamb served over rice.",
+                    price: "Price coming soon"
                 },
-
                 {
                     name: "Fish Over Rice & Salad",
-                    description: "",
-                    price: ""
+                    description: "Seasoned fish served over rice with a fresh side salad.",
+                    price: "Price coming soon"
                 },
-
                 {
                     name: "Chickpeas & Veggies Over Rice",
-                    description: "",
-                    price: ""
+                    description: "A satisfying vegetarian platter with chickpeas, vegetables and rice.",
+                    price: "Price coming soon"
                 }
-
             ]
         },
-
-
         {
             category: "Gyro Wraps",
-
             items: [
-
                 {
                     name: "Chicken Gyro",
-                    description: "",
-                    price: ""
+                    description: "Seasoned chicken wrapped fresh with crisp toppings and sauce.",
+                    price: "Price coming soon"
                 },
-
                 {
                     name: "Lamb Gyro",
-                    description: "",
-                    price: ""
+                    description: "Savory lamb wrapped fresh with crisp toppings and sauce.",
+                    price: "Price coming soon"
                 },
-
                 {
                     name: "Fish Gyro",
-                    description: "",
-                    price: ""
+                    description: "Seasoned fish wrapped fresh with crisp toppings and sauce.",
+                    price: "Price coming soon"
                 }
-
             ]
         }
-
     ],
 
-
     catering: [
-
-        {
-            name: "Kabli Polao"
-        },
-
-        {
-            name: "Chapli Kabab"
-        }
-
+        { name: "Kabli Polao" },
+        { name: "Chapli Kabab" }
     ]
-
 };
