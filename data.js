@@ -16,27 +16,37 @@ const restaurantData = {
 
     menu: [
         {
-            category: "Specials",
+            category: "Combos / Specials",
             items: [
                 {
+                    name: "1 Slider",
+                    description: "Includes fries, pickles, coleslaw, cheese, Yaya's sauce and soda.",
+                    price: "$10.99"
+                },
+                {
+                    name: "2 Sliders",
+                    description: "Includes fries, pickles, coleslaw, cheese, Yaya's sauce and soda.",
+                    price: "$14.99"
+                },
+                {
+                    name: "2 Tenders",
+                    description: "Includes fries, pickles, toast, Yaya's sauce and soda.",
+                    price: "$14.99"
+                },
+                {
+                    name: "1 Tender + 1 Slider",
+                    description: "Includes fries, pickles, coleslaw, cheese, Yaya's sauce and soda.",
+                    price: "$14.99"
+                },
+                {
+                    name: "1 Tender Wrap",
+                    description: "Includes fries, pickles, coleslaw, cheese, Yaya's sauce and soda.",
+                    price: "$11.45"
+                },
+                {
                     name: "Loaded Fries",
-                    description: "Crispy fries loaded with seasoned chicken and Yaya's signature flavors.",
-                    price: "Price coming soon"
-                },
-                {
-                    name: "Chicken Bites",
-                    description: "Juicy bite-size chicken pieces, seasoned and cooked fresh.",
-                    price: "Price coming soon"
-                },
-                {
-                    name: "1 Chicken Slider with Fries",
-                    description: "One hot chicken slider served with a side of crispy fries.",
-                    price: "Price coming soon"
-                },
-                {
-                    name: "2 Chicken Sliders with Fries",
-                    description: "Two hot chicken sliders served with a side of crispy fries.",
-                    price: "Price coming soon"
+                    description: "Crispy loaded fries packed with Yaya's bold flavor.",
+                    price: "$10.99"
                 }
             ]
         },
@@ -44,29 +54,29 @@ const restaurantData = {
             category: "Rice Platters",
             items: [
                 {
-                    name: "Chicken Over Rice & Salad",
-                    description: "Seasoned chicken served over rice with a fresh side salad.",
-                    price: "Price coming soon"
+                    name: "Chicken Rice Platter",
+                    description: "Seasoned chicken served over rice.",
+                    price: "$14.99"
                 },
                 {
-                    name: "Lamb Over Rice & Salad",
-                    description: "Savory lamb served over rice with a fresh side salad.",
-                    price: "Price coming soon"
+                    name: "Lamb Rice Platter",
+                    description: "Savory lamb served over rice.",
+                    price: "$14.99"
                 },
                 {
-                    name: "Chicken & Lamb Over Rice",
-                    description: "A hearty combination of seasoned chicken and lamb served over rice.",
-                    price: "Price coming soon"
+                    name: "Combo Rice Platter",
+                    description: "Chicken and lamb served together over rice.",
+                    price: "$14.99"
                 },
                 {
-                    name: "Fish Over Rice & Salad",
-                    description: "Seasoned fish served over rice with a fresh side salad.",
-                    price: "Price coming soon"
+                    name: "Fish Rice Platter",
+                    description: "Seasoned fish served over rice.",
+                    price: "$14.99"
                 },
                 {
-                    name: "Chickpeas & Veggies Over Rice",
-                    description: "A satisfying vegetarian platter with chickpeas, vegetables and rice.",
-                    price: "Price coming soon"
+                    name: "Chickpeas Rice Platter",
+                    description: "A hearty chickpea rice platter.",
+                    price: "$14.99"
                 }
             ]
         },
@@ -74,19 +84,19 @@ const restaurantData = {
             category: "Gyro Wraps",
             items: [
                 {
-                    name: "Chicken Gyro",
+                    name: "Chicken Gyro Wrap",
                     description: "Seasoned chicken wrapped fresh with crisp toppings and sauce.",
-                    price: "Price coming soon"
+                    price: "$10.99"
                 },
                 {
-                    name: "Lamb Gyro",
+                    name: "Lamb Gyro Wrap",
                     description: "Savory lamb wrapped fresh with crisp toppings and sauce.",
-                    price: "Price coming soon"
+                    price: "$10.99"
                 },
                 {
-                    name: "Fish Gyro",
+                    name: "Fish Gyro Wrap",
                     description: "Seasoned fish wrapped fresh with crisp toppings and sauce.",
-                    price: "Price coming soon"
+                    price: "$10.99"
                 }
             ]
         }
