@@ -22,6 +22,7 @@ body {
 }
 
 .brand-tagline {
+    display: inline-block !important;
     color: var(--brand-yellow);
     font-weight: 1000;
     font-style: italic;
@@ -68,18 +69,9 @@ body {
     color: #fff;
 }
 
-.menu-section .section-label {
-    color: var(--brand-yellow);
-}
-
-.menu-section .section-heading h2 {
-    color: #fff;
-    text-shadow: 0 3px 0 rgba(225,38,28,.25);
-}
-
-.menu-section .section-heading > p:last-child {
-    color: #cfcfcf;
-}
+.menu-section .section-label { color: var(--brand-yellow); }
+.menu-section .section-heading h2 { color: #fff; text-shadow: 0 3px 0 rgba(225,38,28,.25); }
+.menu-section .section-heading > p:last-child { color: #cfcfcf; }
 
 .menu-category {
     border: 1px solid rgba(255,210,26,.12);
@@ -90,10 +82,7 @@ body {
     background: linear-gradient(90deg, #d91f16, #f4431e 58%, #ff7a1a) !important;
 }
 
-.category-title h3 {
-    color: #fff;
-    text-shadow: 0 2px 0 rgba(0,0,0,.22);
-}
+.category-title h3 { color: #fff; text-shadow: 0 2px 0 rgba(0,0,0,.22); }
 
 .menu-item {
     background:
@@ -107,14 +96,8 @@ body {
         #151515 !important;
 }
 
-.menu-item h4 {
-    color: #fff;
-}
-
-.menu-description {
-    color: #d4d4d4;
-}
-
+.menu-item h4 { color: #fff; }
+.menu-description { color: #d4d4d4; }
 .menu-price {
     background: linear-gradient(135deg, #ef261b, #ff5a20);
     color: #fff;
@@ -129,20 +112,11 @@ body {
     border-bottom: 5px solid var(--brand-red);
 }
 
-.catering .section-label {
-    color: var(--brand-yellow);
-}
-
-.catering h2 {
-    color: #fff;
-    text-shadow: 0 4px 0 rgba(0,0,0,.18);
-}
-
+.catering .section-label { color: var(--brand-yellow); }
+.catering h2 { color: #fff; text-shadow: 0 4px 0 rgba(0,0,0,.18); }
 .catering-content > p,
 .catering-item,
-.minimum-order {
-    color: rgba(255,255,255,.94);
-}
+.minimum-order { color: rgba(255,255,255,.94); }
 
 .photo-placeholder {
     background:
@@ -160,10 +134,7 @@ body {
 }
 
 .button-light:hover,
-.button-primary:hover {
-    background: #fff;
-    color: #111;
-}
+.button-primary:hover { background: #fff; color: #111; }
 
 .contact {
     background:
@@ -172,13 +143,8 @@ body {
     color: #fff;
 }
 
-.contact .section-label {
-    color: var(--brand-yellow);
-}
-
-.contact .section-heading h2 {
-    color: #fff;
-}
+.contact .section-label { color: var(--brand-yellow); }
+.contact .section-heading h2 { color: #fff; }
 
 .contact-card {
     background: #151515;
@@ -187,22 +153,11 @@ body {
     color: #fff;
 }
 
-.contact-card h3 {
-    color: var(--brand-yellow);
-}
-
-.contact-item {
-    border-bottom-color: rgba(255,255,255,.1);
-}
-
-.contact-title {
-    color: var(--brand-orange);
-}
-
+.contact-card h3 { color: var(--brand-yellow); }
+.contact-item { border-bottom-color: rgba(255,255,255,.1); }
+.contact-title { color: var(--brand-orange); }
 .contact-item p,
-.hours-row {
-    color: #e2e2e2;
-}
+.hours-row { color: #e2e2e2; }
 
 .map-placeholder {
     background:
@@ -211,17 +166,9 @@ body {
     border: 1px solid rgba(255,210,26,.16);
 }
 
-.map-placeholder h3 {
-    color: var(--brand-yellow);
-}
-
-.map-placeholder p {
-    color: #ededed;
-}
-
-.map-placeholder .text-link {
-    color: var(--brand-yellow);
-}
+.map-placeholder h3 { color: var(--brand-yellow); }
+.map-placeholder p { color: #ededed; }
+.map-placeholder .text-link { color: var(--brand-yellow); }
 
 .final-cta {
     background:
@@ -230,44 +177,30 @@ body {
     border-top: 5px solid var(--brand-red);
 }
 
-.final-cta p {
-    color: var(--brand-orange);
-}
-
-.final-cta h2 {
-    color: var(--brand-yellow);
-}
+.final-cta p { color: var(--brand-orange); }
+.final-cta h2 { color: var(--brand-yellow); }
 
 .footer {
     background: #030303;
     border-top: 1px solid rgba(255,255,255,.06);
 }
 
-.footer strong {
-    color: var(--brand-yellow);
-}
-
+.footer strong { color: var(--brand-yellow); }
 .footer p,
-.footer-links a {
-    color: #c9c9c9;
-}
-
-.footer-links a:hover {
-    color: var(--brand-yellow);
-}
+.footer-links a { color: #c9c9c9; }
+.footer-links a:hover { color: var(--brand-yellow); }
 
 @media (max-width: 930px) {
-    .brand-tagline {
-        font-size: 16px;
-    }
+    .brand-tagline { font-size: 16px; }
 }
 
 @media (max-width: 560px) {
     .brand-tagline {
-        font-size: 11px;
-        max-width: 82px;
-        white-space: normal;
-        line-height: 1.05;
+        display: inline-block !important;
+        font-size: 15px;
+        max-width: none;
+        white-space: nowrap;
+        line-height: 1;
     }
 
     .menu-section .section-heading h2,
@@ -279,6 +212,9 @@ body {
 
 @media (max-width: 390px) {
     .brand-tagline {
-        display: none;
+        display: inline-block !important;
+        font-size: 14px;
+        max-width: none;
+        white-space: nowrap;
     }
 }
