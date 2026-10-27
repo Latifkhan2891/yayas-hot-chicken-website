@@ -1,47 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-        content="Yaya's Hot Chicken in Lakeland, Florida. Hot chicken, rice platters, gyros, catering and more.">
-
+    <meta name="description" content="Yaya's Hot Chicken in Lakeland, Florida. Hot chicken, rice platters, gyro wraps, catering and more.">
     <title>Yaya's Hot Chicken | Lakeland, FL</title>
-
     <link rel="stylesheet" href="style.css">
-
     <script src="data.js" defer></script>
     <script src="script.js" defer></script>
 </head>
-
 <body>
-
-    <!-- HEADER -->
     <header class="header">
         <div class="container nav-container">
-
-            <a href="#home" class="brand">
-                <div class="brand-logo">
-                    <img src="images/logo.png"
-                         alt="Yaya's Hot Chicken Logo"
-                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-
-                    <div class="logo-placeholder">
-                        YAYA'S
-                    </div>
-                </div>
-
+            <a href="#home" class="brand" aria-label="Yaya's Hot Chicken home">
+                <img class="brand-logo" src="images/logo.png" alt="Yaya's Hot Chicken logo">
                 <div class="brand-text">
                     <span>YAYA'S</span>
                     <small>HOT CHICKEN</small>
                 </div>
             </a>
 
-            <button class="menu-button" id="menuButton" aria-label="Open menu">
-                ☰
-            </button>
+            <button class="menu-button" id="menuButton" aria-label="Open menu">☰</button>
 
             <nav class="nav-links" id="navLinks">
                 <a href="#home">HOME</a>
@@ -49,258 +28,133 @@
                 <a href="#catering">CATERING</a>
                 <a href="#contact">CONTACT & LOCATION</a>
             </nav>
-
         </div>
     </header>
 
-
-    <!-- HOME -->
     <main>
-
         <section class="hero" id="home">
-
             <div class="hero-overlay"></div>
-
-            <div class="container hero-content">
-
-                <p class="eyebrow">LAKELAND, FLORIDA</p>
-
-                <h1>
-                    YAYA'S
-                    <span>HOT CHICKEN</span>
-                </h1>
-
-                <p class="tagline">Taste the Blessings.</p>
-
-                <p class="hero-description">
-                    Hot chicken, flavorful rice platters, gyros and more —
-                    made fresh and packed with flavor.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#menu" class="button button-primary">
-                        VIEW MENU
-                    </a>
-
-                    <a href="#contact" class="button button-outline">
-                        FIND US
-                    </a>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- INTRO -->
-        <section class="intro section">
-
-            <div class="container intro-grid">
-
-                <div>
-                    <p class="section-label">WELCOME TO YAYA'S</p>
-
-                    <h2>Big Flavor.<br>Made Fresh.</h2>
-                </div>
-
-                <div class="intro-copy">
-                    <p>
-                        Welcome to Yaya's Hot Chicken. We're serving bold,
-                        satisfying food in Lakeland, Florida.
-                    </p>
-
-                    <p>
-                        Check out our menu, learn about catering and stop by
-                        to taste the blessings.
-                    </p>
-
-                    <a href="#menu" class="text-link">Explore our menu →</a>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- MENU -->
-        <section class="menu-section section" id="menu">
-
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="section-label">WHAT WE'RE SERVING</p>
-                    <h2>OUR MENU</h2>
-                    <p>
-                        Fresh food, bold flavors and something for everyone.
-                    </p>
-                </div>
-
-                <div id="menuContainer"></div>
-
-            </div>
-
-        </section>
-
-
-        <!-- CATERING -->
-        <section class="catering section" id="catering">
-
-            <div class="container catering-grid">
-
-                <div class="catering-content">
-
-                    <p class="section-label light-label">
-                        FEED THE WHOLE CREW
-                    </p>
-
-                    <h2>CATERING</h2>
-
-                    <p>
-                        Planning a family gathering, party, office lunch or
-                        special event? Yaya's offers catering for larger orders.
-                    </p>
-
-                    <div id="cateringItems"></div>
-
-                    <p class="minimum-order">
-                        Minimum catering order: <strong>$100</strong>
-                    </p>
-
-                    <a href="#contact" class="button button-light">
-                        CONTACT US FOR CATERING
-                    </a>
-
-                </div>
-
-                <div class="catering-photo">
-                    <div class="photo-placeholder">
-                        <span>CATERING</span>
-                        <small>Add your catering picture later</small>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="eyebrow">LAKELAND, FLORIDA</p>
+                    <h1>YAYA'S <span>HOT CHICKEN</span></h1>
+                    <p class="tagline">Taste the Blessings.</p>
+                    <p class="hero-description">Hot chicken, rice platters, gyro wraps and more — made fresh and packed with flavor.</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="button button-primary">VIEW MENU</a>
+                        <a href="#contact" class="button button-outline">FIND US</a>
                     </div>
                 </div>
 
+                <div class="hero-logo-wrap">
+                    <div class="hero-logo-glow"></div>
+                    <img src="images/logo.png" alt="Yaya's Hot Chicken flame logo">
+                </div>
             </div>
-
         </section>
 
+        <section class="intro section">
+            <div class="container intro-grid">
+                <div>
+                    <p class="section-label">WELCOME TO YAYA'S</p>
+                    <h2>Big Flavor.<br>Made Fresh.</h2>
+                </div>
+                <div class="intro-copy">
+                    <p>Welcome to Yaya's Hot Chicken. We're serving bold, satisfying food in Lakeland, Florida.</p>
+                    <p>Check out our menu, learn about catering and stop by to taste the blessings.</p>
+                    <a href="#menu" class="text-link">Explore our menu →</a>
+                </div>
+            </div>
+        </section>
 
-        <!-- CONTACT -->
-        <section class="contact section" id="contact">
-
+        <section class="menu-section section" id="menu">
             <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">WHAT WE'RE SERVING</p>
+                    <h2>OUR MENU</h2>
+                    <p>Combos, rice platters and gyro wraps made to satisfy.</p>
+                </div>
+                <div id="menuContainer"></div>
+            </div>
+        </section>
 
+        <section class="catering section" id="catering">
+            <div class="container catering-grid">
+                <div class="catering-content">
+                    <p class="section-label light-label">FEED THE WHOLE CREW</p>
+                    <h2>CATERING</h2>
+                    <p>Planning a family gathering, party, office lunch or special event? Yaya's offers catering for larger orders.</p>
+                    <div id="cateringItems"></div>
+                    <p class="minimum-order">Minimum catering order: <strong>$100</strong></p>
+                    <a href="#contact" class="button button-light">CONTACT US FOR CATERING</a>
+                </div>
+                <div class="catering-photo">
+                    <div class="photo-placeholder">
+                        <span>YAYA'S</span>
+                        <small>Catering for family gatherings and large orders</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container">
                 <div class="section-heading">
                     <p class="section-label">COME SEE US</p>
                     <h2>CONTACT & LOCATION</h2>
                 </div>
-
                 <div class="contact-grid">
-
                     <div class="contact-card">
-
                         <h3>Yaya's Hot Chicken</h3>
-
                         <div class="contact-item">
                             <span class="contact-title">ADDRESS</span>
-
                             <p id="addressText"></p>
                         </div>
-
                         <div class="contact-item">
                             <span class="contact-title">PHONE</span>
-
-                            <p id="phoneText">Add phone number in data.js</p>
+                            <p id="phoneText">Phone number coming soon</p>
                         </div>
-
                         <div class="contact-item">
                             <span class="contact-title">HOURS</span>
-
                             <div id="hoursContainer"></div>
                         </div>
-
-                        <a id="directionsButton"
-                           href="#"
-                           target="_blank"
-                           class="button button-primary">
-                            GET DIRECTIONS
-                        </a>
-
+                        <a id="directionsButton" href="#" target="_blank" class="button button-primary">GET DIRECTIONS</a>
                     </div>
-
                     <div class="map-placeholder">
-
                         <div>
                             <span class="map-icon">📍</span>
-
-                            <h3>Yaya's Hot Chicken</h3>
-
-                            <p>Lakeland, Florida</p>
-
-                            <a id="mapLink"
-                               href="#"
-                               target="_blank"
-                               class="text-link">
-                                Open in Google Maps →
-                            </a>
+                            <h3>995 E Memorial Blvd</h3>
+                            <p>Unit 12 · Lakeland, FL 33801</p>
+                            <a id="mapLink" href="#" target="_blank" class="text-link">Open in Google Maps →</a>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- CALL TO ACTION -->
         <section class="final-cta">
-
             <div class="container">
-
                 <p>HOT. FRESH. FLAVORFUL.</p>
-
                 <h2>TASTE THE BLESSINGS.</h2>
-
-                <a href="#menu" class="button button-light">
-                    SEE THE MENU
-                </a>
-
+                <a href="#menu" class="button button-light">SEE THE MENU</a>
             </div>
-
         </section>
-
     </main>
 
-
-    <!-- FOOTER -->
     <footer class="footer">
-
         <div class="container footer-grid">
-
             <div>
                 <strong>YAYA'S HOT CHICKEN</strong>
                 <p>Taste the Blessings.</p>
             </div>
-
             <div class="footer-links">
                 <a href="#home">Home</a>
                 <a href="#menu">Menu</a>
                 <a href="#catering">Catering</a>
                 <a href="#contact">Contact & Location</a>
             </div>
-
-            <div>
-                <p>
-                    © <span id="currentYear"></span>
-                    Yaya's Hot Chicken
-                </p>
-            </div>
-
+            <div><p>© <span id="currentYear"></span> Yaya's Hot Chicken</p></div>
         </div>
-
     </footer>
-
 </body>
-
 </html>
