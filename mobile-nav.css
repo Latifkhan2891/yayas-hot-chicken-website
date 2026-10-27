@@ -99,126 +99,108 @@
     }
 }
 
-/* Phones: one unified themed header block */
+/* Phones: logo, tagline and options all live in ONE themed layer */
 @media (max-width: 620px) {
     .header {
-        background:
-            radial-gradient(circle at 50% -20%, rgba(255, 122, 26, .22), transparent 42%),
-            linear-gradient(180deg, #0a0a0a 0%, #0a0706 100%);
-        border-bottom: 3px solid #e1261c;
+        background: linear-gradient(90deg, #8f0d08 0%, #c71911 34%, #e1261c 66%, #ff6415 100%);
+        border-bottom: 4px solid #ffd21a;
+        box-shadow: 0 8px 24px rgba(0,0,0,.28);
     }
 
     .nav-container {
-        width: 96%;
+        width: 100%;
         min-height: 0;
-        padding: 8px 0 8px;
+        padding: 8px 8px 7px;
         display: grid;
         grid-template-columns: 1fr;
-        gap: 5px;
+        gap: 3px;
     }
 
     .brand {
         width: 100%;
         justify-content: center;
         min-width: 0;
-        padding: 0 8px 2px;
+        padding: 0 6px 3px;
     }
 
     .brand-logo {
-        width: 60px;
-        height: 60px;
+        width: 58px;
+        height: 58px;
+        filter: drop-shadow(0 0 7px rgba(0,0,0,.25));
     }
 
     .brand-tagline {
         display: inline-block !important;
         visibility: visible !important;
         opacity: 1 !important;
-        margin-left: 9px;
+        margin-left: 8px;
         font-size: 15px;
         max-width: none;
         white-space: nowrap;
         color: #ffd21a;
+        text-shadow:
+            1px 1px 0 #8f0d08,
+            2px 2px 0 rgba(0,0,0,.28);
     }
 
     .nav-links {
         width: 100%;
         justify-content: center !important;
-        gap: 14px !important;
+        gap: 8px !important;
         flex: none;
-        padding: 4px 0 0 !important;
+        padding: 2px 0 0 !important;
         background: transparent !important;
         border: 0 !important;
-        position: relative !important;
+        position: static !important;
     }
 
     .nav-links::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: min(86%, 340px);
-        height: 2px;
-        border-radius: 999px;
-        background: linear-gradient(90deg, transparent, #e1261c, #ff7a1a, #ffd21a, transparent);
-        opacity: .9;
+        display: none !important;
     }
 
     .nav-links a {
         font-size: 11px !important;
-        padding: 7px 2px 5px !important;
-        letter-spacing: .25px !important;
-        color: #f7f7f7 !important;
-        background: transparent !important;
-        border: 0 !important;
-        border-radius: 0;
-        text-shadow: 0 1px 1px rgba(0,0,0,.32);
+        padding: 7px 10px !important;
+        letter-spacing: .15px !important;
+        color: #fff !important;
+        background: rgba(80, 8, 4, .28) !important;
+        border: 1px solid rgba(255,255,255,.15) !important;
+        border-radius: 999px !important;
+        text-shadow: 0 1px 1px rgba(0,0,0,.28);
         position: relative;
     }
 
     .nav-links a:first-child {
-        color: #ffd21a !important;
-        background: transparent !important;
-        box-shadow: none;
+        color: #171717 !important;
+        background: linear-gradient(135deg, #ffd21a, #ffad1a) !important;
+        border-color: rgba(255,255,255,.22) !important;
+        box-shadow: 0 4px 12px rgba(111, 16, 0, .20);
+        text-shadow: none;
     }
 
     .nav-links a::after {
-        content: "" !important;
-        display: block !important;
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        width: 0;
-        height: 2px;
-        transform: translateX(-50%);
-        background: linear-gradient(90deg, #e1261c, #ff7a1a, #ffd21a);
-        transition: width .2s ease;
-    }
-
-    .nav-links a:hover::after,
-    .nav-links a:focus::after,
-    .nav-links a:first-child::after {
-        width: 100%;
+        display: none !important;
     }
 }
 
 @media (max-width: 430px) {
     .brand-logo {
-        width: 56px;
-        height: 56px;
+        width: 54px;
+        height: 54px;
     }
 
     .brand-tagline {
         font-size: 14px;
-        margin-left: 7px;
+        margin-left: 6px;
     }
 
     .nav-links {
-        gap: 10px !important;
+        gap: 5px !important;
     }
 
     .nav-links a {
         font-size: 10px !important;
+        padding: 6px 8px !important;
     }
 }
 
@@ -228,10 +210,11 @@
     }
 
     .nav-links {
-        gap: 8px !important;
+        gap: 4px !important;
     }
 
     .nav-links a {
         font-size: 9px !important;
+        padding: 6px 7px !important;
     }
 }
