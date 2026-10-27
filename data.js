@@ -41,7 +41,7 @@ const restaurantData = {
                 {
                     name: "1 Tender Wrap",
                     description: "Includes fries, pickles, coleslaw, cheese, Yaya's sauce and soda.",
-                    price: "$11.45"
+                    price: "$10.99"
                 },
                 {
                     name: "Loaded Fries",
