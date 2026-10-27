@@ -36,13 +36,16 @@
     <main>
         <section class="poster-hero" id="home">
             <div class="poster-stage">
-                <img class="poster-art" src="images/menu-hero.png" alt="Yaya's Hot Chicken menu featuring combos, rice platters and gyro wraps">
-                <div class="poster-fallback" aria-hidden="true">
-                    <img src="images/logo.png" alt="">
-                    <p>Taste the Blessings.</p>
-                </div>
+                <img class="poster-art" src="images/Front-Page-Image.png" alt="Yaya's Hot Chicken front page">
             </div>
-            <a href="#menu" class="poster-scroll">VIEW WEBSITE MENU ↓</a>
+            <a href="#menu-preview" class="poster-scroll">SEE MENU ↓</a>
+        </section>
+
+        <section class="menu-image-section" id="menu-preview">
+            <a href="#menu" class="menu-image-link" aria-label="Open Yaya's website menu">
+                <img src="images/Menu-Image.png" alt="Yaya's Hot Chicken menu" onerror="this.closest('.menu-image-section').style.display='none'">
+                <span class="menu-image-cta">CLICK TO VIEW WEBSITE MENU ↓</span>
+            </a>
         </section>
 
         <section class="intro section">
