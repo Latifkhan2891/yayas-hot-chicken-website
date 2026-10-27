@@ -1,0 +1,284 @@
+/* YAYA'S HOT CHICKEN — UNIFIED BRAND THEME */
+
+:root {
+    --brand-black: #090909;
+    --brand-charcoal: #141414;
+    --brand-red: #e1261c;
+    --brand-deep-red: #8f0d08;
+    --brand-orange: #ff6a00;
+    --brand-yellow: #ffd21a;
+    --brand-cream: #fff4df;
+    --brand-white: #ffffff;
+}
+
+body {
+    background: var(--brand-black);
+}
+
+.header {
+    background: #080808;
+    border-bottom: 4px solid var(--brand-red);
+    box-shadow: 0 8px 28px rgba(0,0,0,.32);
+}
+
+.brand-tagline {
+    color: var(--brand-yellow);
+    font-weight: 1000;
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1;
+    letter-spacing: .2px;
+    text-shadow:
+        1px 1px 0 var(--brand-red),
+        2px 2px 0 rgba(255,106,0,.65),
+        0 0 10px rgba(255,210,26,.15);
+    white-space: nowrap;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: var(--brand-yellow);
+}
+
+.poster-hero {
+    background: #000;
+    border-bottom: 5px solid var(--brand-red);
+}
+
+.poster-scroll {
+    background: linear-gradient(135deg, #090909, #161616);
+    border: 2px solid rgba(255,255,255,.18);
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,.42);
+}
+
+.poster-scroll:hover {
+    background: linear-gradient(135deg, var(--brand-red), var(--brand-orange));
+    color: #fff;
+}
+
+.menu-section {
+    background:
+        radial-gradient(circle at 15% 0%, rgba(255,210,26,.07), transparent 22%),
+        linear-gradient(180deg, #0b0b0b 0%, #111 100%) !important;
+    color: #fff;
+}
+
+.menu-section .section-label {
+    color: var(--brand-yellow);
+}
+
+.menu-section .section-heading h2 {
+    color: #fff;
+    text-shadow: 0 3px 0 rgba(225,38,28,.25);
+}
+
+.menu-section .section-heading > p:last-child {
+    color: #cfcfcf;
+}
+
+.menu-category {
+    border: 1px solid rgba(255,210,26,.12);
+    box-shadow: 0 24px 55px rgba(0,0,0,.35);
+}
+
+.category-title {
+    background: linear-gradient(90deg, #d91f16, #f4431e 58%, #ff7a1a) !important;
+}
+
+.category-title h3 {
+    color: #fff;
+    text-shadow: 0 2px 0 rgba(0,0,0,.22);
+}
+
+.menu-item {
+    background:
+        radial-gradient(circle at 100% 0%, rgba(255,210,26,.045), transparent 28%),
+        #121212 !important;
+}
+
+.menu-item:nth-child(even) {
+    background:
+        radial-gradient(circle at 100% 0%, rgba(225,38,28,.055), transparent 28%),
+        #151515 !important;
+}
+
+.menu-item h4 {
+    color: #fff;
+}
+
+.menu-description {
+    color: #d4d4d4;
+}
+
+.menu-price {
+    background: linear-gradient(135deg, #ef261b, #ff5a20);
+    color: #fff;
+    border: 1px solid rgba(255,210,26,.18);
+}
+
+.catering {
+    background:
+        radial-gradient(circle at 82% 18%, rgba(255,210,26,.14), transparent 26%),
+        linear-gradient(135deg, #730a06 0%, #a9120c 45%, #d62718 72%, #f25a17 100%);
+    border-top: 5px solid var(--brand-yellow);
+    border-bottom: 5px solid var(--brand-red);
+}
+
+.catering .section-label {
+    color: var(--brand-yellow);
+}
+
+.catering h2 {
+    color: #fff;
+    text-shadow: 0 4px 0 rgba(0,0,0,.18);
+}
+
+.catering-content > p,
+.catering-item,
+.minimum-order {
+    color: rgba(255,255,255,.94);
+}
+
+.photo-placeholder {
+    background:
+        radial-gradient(circle at 50% 30%, rgba(255,255,255,.12), transparent 24%),
+        linear-gradient(145deg, #ff5a17, #ff9a16 54%, #ffd21a 100%);
+    color: #3b0904;
+    border: 2px solid rgba(255,255,255,.24);
+}
+
+.button-light,
+.button-primary {
+    background: var(--brand-yellow);
+    color: #111;
+    box-shadow: 0 10px 24px rgba(0,0,0,.18);
+}
+
+.button-light:hover,
+.button-primary:hover {
+    background: #fff;
+    color: #111;
+}
+
+.contact {
+    background:
+        radial-gradient(circle at 85% 12%, rgba(225,38,28,.08), transparent 22%),
+        #0d0d0d;
+    color: #fff;
+}
+
+.contact .section-label {
+    color: var(--brand-yellow);
+}
+
+.contact .section-heading h2 {
+    color: #fff;
+}
+
+.contact-card {
+    background: #151515;
+    border: 1px solid rgba(255,255,255,.08);
+    box-shadow: 0 18px 44px rgba(0,0,0,.34);
+    color: #fff;
+}
+
+.contact-card h3 {
+    color: var(--brand-yellow);
+}
+
+.contact-item {
+    border-bottom-color: rgba(255,255,255,.1);
+}
+
+.contact-title {
+    color: var(--brand-orange);
+}
+
+.contact-item p,
+.hours-row {
+    color: #e2e2e2;
+}
+
+.map-placeholder {
+    background:
+        linear-gradient(rgba(0,0,0,.74), rgba(0,0,0,.82)),
+        radial-gradient(circle at center, var(--brand-orange), #1b1b1b);
+    border: 1px solid rgba(255,210,26,.16);
+}
+
+.map-placeholder h3 {
+    color: var(--brand-yellow);
+}
+
+.map-placeholder p {
+    color: #ededed;
+}
+
+.map-placeholder .text-link {
+    color: var(--brand-yellow);
+}
+
+.final-cta {
+    background:
+        radial-gradient(circle at 50% 0%, rgba(225,38,28,.18), transparent 35%),
+        #050505;
+    border-top: 5px solid var(--brand-red);
+}
+
+.final-cta p {
+    color: var(--brand-orange);
+}
+
+.final-cta h2 {
+    color: var(--brand-yellow);
+}
+
+.footer {
+    background: #030303;
+    border-top: 1px solid rgba(255,255,255,.06);
+}
+
+.footer strong {
+    color: var(--brand-yellow);
+}
+
+.footer p,
+.footer-links a {
+    color: #c9c9c9;
+}
+
+.footer-links a:hover {
+    color: var(--brand-yellow);
+}
+
+@media (max-width: 930px) {
+    .brand-tagline {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 560px) {
+    .brand-tagline {
+        font-size: 11px;
+        max-width: 82px;
+        white-space: normal;
+        line-height: 1.05;
+    }
+
+    .menu-section .section-heading h2,
+    .contact .section-heading h2,
+    .catering h2 {
+        letter-spacing: -1px;
+    }
+}
+
+@media (max-width: 390px) {
+    .brand-tagline {
+        display: none;
+    }
+}
