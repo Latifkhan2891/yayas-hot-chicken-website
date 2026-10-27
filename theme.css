@@ -21,19 +21,66 @@ body {
     box-shadow: 0 8px 28px rgba(0,0,0,.32);
 }
 
+/* Animated LED / flame treatment used on every screen size */
 .brand-tagline {
     display: inline-block !important;
-    color: var(--brand-yellow);
     font-weight: 1000;
     font-style: italic;
     font-size: 19px;
     line-height: 1;
     letter-spacing: .2px;
-    text-shadow:
-        1px 1px 0 var(--brand-red),
-        2px 2px 0 rgba(255,106,0,.65),
-        0 0 10px rgba(255,210,26,.15);
     white-space: nowrap;
+
+    background: linear-gradient(
+        90deg,
+        #ffd21a 0%,
+        #ffb31a 18%,
+        #ff6a00 38%,
+        #e1261c 56%,
+        #ff6a00 72%,
+        #ffd21a 100%
+    );
+    background-size: 260% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    animation: yayaTaglineGlow 4.2s linear infinite;
+    text-shadow:
+        0 0 4px rgba(255, 210, 26, .55),
+        0 0 9px rgba(255, 122, 26, .42),
+        0 0 15px rgba(225, 38, 28, .30);
+}
+
+@keyframes yayaTaglineGlow {
+    0% {
+        background-position: 0% 50%;
+        filter: drop-shadow(0 0 2px rgba(255, 210, 26, .35));
+    }
+    25% {
+        background-position: 70% 50%;
+        filter: drop-shadow(0 0 4px rgba(255, 155, 23, .45));
+    }
+    50% {
+        background-position: 140% 50%;
+        filter: drop-shadow(0 0 5px rgba(225, 38, 28, .48));
+    }
+    75% {
+        background-position: 210% 50%;
+        filter: drop-shadow(0 0 4px rgba(255, 106, 0, .42));
+    }
+    100% {
+        background-position: 260% 50%;
+        filter: drop-shadow(0 0 2px rgba(255, 210, 26, .35));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .brand-tagline {
+        animation: none;
+        background-position: 45% 50%;
+    }
 }
 
 .nav-links a {
