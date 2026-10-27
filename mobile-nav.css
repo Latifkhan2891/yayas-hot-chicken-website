@@ -1,0 +1,85 @@
+/* Mobile header cleanup: logo only + always-visible navigation links */
+
+@media (max-width: 930px) {
+    .nav-container {
+        min-height: 72px;
+        width: min(96%, 1180px);
+        gap: 10px;
+    }
+
+    .brand {
+        gap: 0;
+    }
+
+    .brand-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .brand-text,
+    .menu-button {
+        display: none !important;
+    }
+
+    .nav-links {
+        position: static !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-end;
+        gap: 14px !important;
+        padding: 0 !important;
+        background: transparent !important;
+        border: 0 !important;
+        flex: 1;
+    }
+
+    .nav-links a {
+        width: auto !important;
+        padding: 22px 0 !important;
+        font-size: 11px !important;
+        letter-spacing: 0.35px !important;
+        white-space: nowrap;
+    }
+
+    .nav-links a::after {
+        display: none !important;
+    }
+}
+
+@media (max-width: 560px) {
+    .nav-container {
+        min-height: 62px;
+        width: 98%;
+    }
+
+    .brand-logo {
+        width: 42px;
+        height: 42px;
+    }
+
+    .nav-links {
+        gap: 8px !important;
+    }
+
+    .nav-links a {
+        font-size: 9px !important;
+        padding: 18px 0 !important;
+        letter-spacing: 0 !important;
+    }
+}
+
+@media (max-width: 390px) {
+    .brand-logo {
+        width: 38px;
+        height: 38px;
+    }
+
+    .nav-links {
+        gap: 6px !important;
+    }
+
+    .nav-links a {
+        font-size: 8px !important;
+    }
+}
