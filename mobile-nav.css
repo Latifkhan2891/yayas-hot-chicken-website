@@ -1,4 +1,4 @@
-/* Yaya's Hot Chicken — branded responsive header */
+/* Yaya's Hot Chicken — unified responsive header */
 
 .brand-tagline {
     display: inline-block;
@@ -20,15 +20,15 @@
 @media (max-width: 930px) {
     .header {
         background:
-            radial-gradient(circle at 18% 0%, rgba(255, 122, 26, .16), transparent 28%),
-            linear-gradient(180deg, #0b0b0b 0%, #060606 100%);
-        border-bottom: 0;
-        box-shadow: 0 8px 26px rgba(0, 0, 0, .35);
+            radial-gradient(circle at 22% 0%, rgba(255, 106, 0, .18), transparent 30%),
+            linear-gradient(180deg, #0c0c0c 0%, #070707 100%);
+        border-bottom: 3px solid #e1261c;
+        box-shadow: 0 8px 26px rgba(0, 0, 0, .34);
     }
 
     .nav-container {
-        min-height: 82px;
         width: min(98%, 1180px);
+        min-height: 82px;
         gap: 12px;
     }
 
@@ -99,49 +99,42 @@
     }
 }
 
-/* Phones: two-row branded header */
+/* Phones: one unified themed header block */
 @media (max-width: 620px) {
+    .header {
+        background:
+            radial-gradient(circle at 50% -20%, rgba(255, 122, 26, .22), transparent 42%),
+            linear-gradient(180deg, #0a0a0a 0%, #0a0706 100%);
+        border-bottom: 3px solid #e1261c;
+    }
+
     .nav-container {
-        width: 100%;
+        width: 96%;
         min-height: 0;
-        padding: 8px 0 0;
+        padding: 8px 0 8px;
         display: grid;
         grid-template-columns: 1fr;
-        gap: 7px;
+        gap: 5px;
     }
 
     .brand {
         width: 100%;
         justify-content: center;
         min-width: 0;
-        padding: 2px 12px 4px;
-        position: relative;
-    }
-
-    .brand::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        bottom: -4px;
-        transform: translateX(-50%);
-        width: min(74%, 300px);
-        height: 2px;
-        border-radius: 999px;
-        background: linear-gradient(90deg, transparent, #e1261c, #ff7a1a, #ffd21a, transparent);
-        opacity: .8;
+        padding: 0 8px 2px;
     }
 
     .brand-logo {
-        width: 62px;
-        height: 62px;
+        width: 60px;
+        height: 60px;
     }
 
     .brand-tagline {
         display: inline-block !important;
         visibility: visible !important;
         opacity: 1 !important;
-        margin-left: 10px;
-        font-size: 16px;
+        margin-left: 9px;
+        font-size: 15px;
         max-width: none;
         white-space: nowrap;
         color: #ffd21a;
@@ -150,55 +143,82 @@
     .nav-links {
         width: 100%;
         justify-content: center !important;
-        gap: 6px !important;
+        gap: 14px !important;
         flex: none;
-        padding: 9px 8px 10px !important;
-        background:
-            linear-gradient(90deg, #8f0d08 0%, #c71911 35%, #e1261c 62%, #ff6415 100%) !important;
-        border-top: 1px solid rgba(255,210,26,.22) !important;
-        border-bottom: 3px solid #ffd21a !important;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,.06);
+        padding: 4px 0 0 !important;
+        background: transparent !important;
+        border: 0 !important;
+        position: relative !important;
+    }
+
+    .nav-links::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: min(86%, 340px);
+        height: 2px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, transparent, #e1261c, #ff7a1a, #ffd21a, transparent);
+        opacity: .9;
     }
 
     .nav-links a {
         font-size: 11px !important;
-        padding: 8px 10px !important;
-        letter-spacing: .2px !important;
-        color: #fff !important;
-        background: rgba(0,0,0,.20);
-        border: 1px solid rgba(255,255,255,.12);
-        border-radius: 999px;
+        padding: 7px 2px 5px !important;
+        letter-spacing: .25px !important;
+        color: #f7f7f7 !important;
+        background: transparent !important;
+        border: 0 !important;
+        border-radius: 0;
         text-shadow: 0 1px 1px rgba(0,0,0,.32);
+        position: relative;
     }
 
     .nav-links a:first-child {
-        color: #161616 !important;
-        background: linear-gradient(135deg, #ffd21a, #ffad1a);
-        border-color: rgba(255,255,255,.24);
-        text-shadow: none;
+        color: #ffd21a !important;
+        background: transparent !important;
+        box-shadow: none;
+    }
+
+    .nav-links a::after {
+        content: "" !important;
+        display: block !important;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        transform: translateX(-50%);
+        background: linear-gradient(90deg, #e1261c, #ff7a1a, #ffd21a);
+        transition: width .2s ease;
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a:focus::after,
+    .nav-links a:first-child::after {
+        width: 100%;
     }
 }
 
 @media (max-width: 430px) {
     .brand-logo {
-        width: 58px;
-        height: 58px;
+        width: 56px;
+        height: 56px;
     }
 
     .brand-tagline {
         font-size: 14px;
-        margin-left: 8px;
+        margin-left: 7px;
     }
 
     .nav-links {
-        gap: 4px !important;
-        padding-left: 5px !important;
-        padding-right: 5px !important;
+        gap: 10px !important;
     }
 
     .nav-links a {
         font-size: 10px !important;
-        padding: 7px 8px !important;
     }
 }
 
@@ -207,8 +227,11 @@
         font-size: 13px;
     }
 
+    .nav-links {
+        gap: 8px !important;
+    }
+
     .nav-links a {
         font-size: 9px !important;
-        padding: 7px 6px !important;
     }
 }
